@@ -28,7 +28,7 @@ async function updateGist(stats) {
   const lines = [];
   for (let i = 0; i < Math.min(stats.data.languages.length, 5); i++) {
     const data = stats.data.languages[i];
-    const { name, percent, text: time } = data;
+    const { name, percent, text: '' } = data;
 
     const line = [
       name.padEnd(11),
